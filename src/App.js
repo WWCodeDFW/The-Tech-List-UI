@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Figures from './components/Figures.js';
+import FiguresLanding from './components/FiguresLanding.js';
 
 class App extends Component {
     state = {
@@ -9,6 +9,7 @@ class App extends Component {
 
     componentDidMount() {
         fetch('http://jsonplaceholder.typicode.com/users')
+        //     fetch('http://localhost:3001/list')
             .then(res => res.json())
             .then((data) => {
                 this.setState({ figures: data })
@@ -19,7 +20,7 @@ class App extends Component {
         return (
             <div className="App">
                 <header className="App-header">
-                    <Figures figures={this.state.figures} />
+                    <FiguresLanding figures={this.state.figures} />
                 </header>
             </div>
         );

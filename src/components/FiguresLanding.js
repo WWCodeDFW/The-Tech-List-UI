@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Figures = ({ figures }) => {
+const FiguresLanding = ({ figures }) => {
     return (
         <div>
             <h1>The Tech List - Influential Figures in Tech</h1>
@@ -16,4 +16,4 @@ const Figures = ({ figures }) => {
     )
 };
 
-export default Figures
+export default FiguresLanding
